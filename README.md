@@ -2,9 +2,9 @@
 
 Este es un ejemplo sencillo de pruebas unitarias usando Junit 5
 
-Observa que esta aplicación no tiene ninguna clase con el método `main`, no nos hace fatal. Además, tampoco tiene ningún `scanner` ni ningún `print`.
+Observa que este proyecto no tiene ninguna clase con el método `main`, no nos hace fatal. Además, tampoco tiene ningún `scanner` ni ningún `print`.
 
-Haz un fork de la aplicación en tu repositorio de Github y contesta a las siguientes preguntas:
+Haz un fork de este proyecto en tu repositorio de Github y contesta a las siguientes preguntas:
 
 1. ¿Qué sentido puede tener este proyecto y para que lo podrías usar?
 2. Revisa las pruebas de la suma y comenta lo que te parezca de interés
