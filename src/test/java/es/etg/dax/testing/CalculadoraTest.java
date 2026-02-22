@@ -33,8 +33,17 @@ public class CalculadoraTest {
         assertEquals(esperado, Calculadora.sumar(valor1, valor2));
     }
 
-    // @Test de varias pruebas juntas
+    // prueba de la división
     @Test
+    void dividir() {
+
+        assertAll("division",
+                () -> assertEquals(2, Calculadora.dividir(100, 50), "100 / 50 = 2"),
+                () -> assertEquals(10, Calculadora.dividir(-70, -7), "(-70) / (-7) = 10"),
+                () -> assertEquals(-2, Calculadora.dividir(-100, 50), "(-100) / 50 = (-2)"));
+    }
+
+        @Test
     void sumar() {
 
         // Se realizan 4 pruebas y si las cuatro son ok, sumar será ok.
@@ -45,6 +54,7 @@ public class CalculadoraTest {
                 () -> assertEquals(-1, Calculadora.sumar(1, -2), "1 + (-2) = -1"));
 
     }
+
 
     // Esta prueba comprueba que al dividir por cero se lanza una excepción
     // controlada: OperacionNoValidaException
