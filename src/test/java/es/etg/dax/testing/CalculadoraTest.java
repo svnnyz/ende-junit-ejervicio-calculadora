@@ -38,9 +38,13 @@ public class CalculadoraTest {
     void dividir() {
 
         assertAll("division",
-                () -> assertEquals(2, Calculadora.dividir(100, 50), "100 / 50 = 2"),
-                () -> assertEquals(10, Calculadora.dividir(-70, -7), "(-70) / (-7) = 10"),
-                () -> assertEquals(-2, Calculadora.dividir(-100, 50), "(-100) / 50 = (-2)"));
+                () -> assertEquals(16, Calculadora.dividir(-800, -50), "CP1"),
+                () -> assertEquals(-2, Calculadora.dividir(-400, 200), "CP2"),
+                () -> assertEquals(0, Calculadora.dividir(-1, -3), "CP3"),
+                () -> assertEquals(0, Calculadora.dividir(0, 50), "CP4"),
+                () -> assertEquals(1, Calculadora.dividir(1, 1), "CP5"),
+                () -> assertEquals(17, Calculadora.dividir(700, 40), "CP6"),
+                () -> assertEquals(-2, Calculadora.dividir(-100, 50), "CP7"));
     }
 
         @Test
